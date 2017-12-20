@@ -10,6 +10,7 @@
     "basic-auth": "1.0.3",
     "body-parser": "1.12.3",
     "destroy": "1.0.3",
+    "dotenv": "4.0.0",
     "express": "^4.13.3",
     "express-useragent": "0.1.9",
     "feed": "^0.3.0",
