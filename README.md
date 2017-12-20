@@ -38,7 +38,18 @@ It uses GitHub as a backend to store assets, and it can easily be deployed to He
 
 #### Auto-updater / Squirrel
 
-This server provides an endpoint for [Squirrel auto-updater](https://github.com/atom/electron/blob/master/docs/api/auto-updater.md), it supports both [OS X](https://nuts.gitbook.com/update-osx.html) and [Windows](https://nuts.gitbook.com/update-windows.html).
+This server provides an endpoint for [Squirrel auto-updater](https://electronjs.org/docs/api/auto-updater), it supports both [OS X](https://nuts.gitbook.com/update-osx.html) and [Windows](https://nuts.gitbook.com/update-windows.html).
+
+#### crashReporter
+
+This server provides an endpoint for [Electron `crashReporter`](https://electronjs.org/docs/api/crash-reporter). Required ENV variables are:
+
+```
+POSTMARK_API_KEY = t0k3n
+SEND_CRASH_REPORTS_FROM = bob@example.com
+SEND_CRASH_REPORTS_TO = bob@example.com
+ELECTRON_VERSIONS = '1.7.9 1.7.10'
+```
 
 #### Documentation
 
