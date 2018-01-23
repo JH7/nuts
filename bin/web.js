@@ -5,6 +5,7 @@ var Analytics = require('analytics-node');
 var nuts = require('../');
 
 var app = express();
+app.set('trust proxy', true);
 
 var apiAuth =  {
     username: process.env.API_USERNAME,
