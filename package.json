@@ -50,5 +50,8 @@
   "scripts": {
     "start": "node bin/web.js",
     "test": "mocha --reporter list"
+  },
+  "engines": {
+    "node": "14.15.4"
   }
 }
