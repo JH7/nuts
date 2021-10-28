@@ -24,7 +24,7 @@ var myNuts = nuts.Nuts({
     endpoint: process.env.GITHUB_ENDPOINT,
     username: process.env.GITHUB_USERNAME,
     password: process.env.GITHUB_PASSWORD,
-    cacheMaxAge: process.env.CACHE_MAX_AGE,
+    cacheMaxAge: process.env.CACHE_MAX_AGE ? parseInt(process.env.CACHE_MAX_AGE, 10) : undefined,
     cache: process.env.VERSIONS_CACHE,
     refreshSecret: process.env.GITHUB_SECRET,
     proxyAssets: !Boolean(process.env.DONT_PROXY_ASSETS),
